@@ -1,17 +1,141 @@
-body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #f4f7f9; display: flex; justify-content: center; padding: 40px 20px; }
-.app-container { max-width: 600px; width: 100%; background: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); padding: 30px; text-align: center; }
+/* 1. GLOBAL RESET & BASE STYLES */
+body { 
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    background-color: #f4f7f9; 
+    display: flex; 
+    justify-content: center; 
+    padding: 40px 20px; 
+    color: #333;
+}
+
+.app-container { 
+    max-width: 600px; 
+    width: 100%; 
+    background: white; 
+    border-radius: 12px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+    padding: 30px; 
+    text-align: center; 
+}
+
 .hidden { display: none; }
 
-/* Quiz Styles */
-.progress-bar { height: 8px; background: #eee; border-radius: 4px; margin: 20px 0; overflow: hidden; }
-#progress { height: 100%; background: #4a90e2; transition: 0.3s; }
-.options-stack { display: flex; flex-direction: column; gap: 15px; margin-top: 30px; }
-.btn-opt { padding: 15px; border: 2px solid #4a90e2; background: white; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; color: #4a90e2; transition: 0.2s; }
-.btn-opt:hover { background: #4a90e2; color: white; }
+/* 2. QUIZ INTERFACE */
+.progress-bar { 
+    height: 8px; 
+    background: #eee; 
+    border-radius: 4px; 
+    margin: 20px 0; 
+    overflow: hidden; 
+}
 
-/* Certificate Styles */
-.cert-border { border: 10px solid #f0f4f8; padding: 40px; border-radius: 4px; background: #fff; position: relative; }
-.cert-header { font-size: 12px; letter-spacing: 2px; color: #999; margin-bottom: 20px; }
-.career-box { background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: left; }
-.btn-download { background: #27ae60; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 20px; width: 100%; }
-.btn-restart { background: #333; color: white; border: none; padding: 10px; border-radius: 8px; margin-top: 10px; cursor: pointer; width: 100%; }
+#progress { 
+    height: 100%; 
+    background: #4a90e2; 
+    transition: 0.3s; 
+}
+
+.options-stack { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+    margin-top: 30px; 
+}
+
+.btn-opt { 
+    padding: 15px; 
+    border: 2px solid #4a90e2; 
+    background: white; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold; 
+    color: #4a90e2; 
+    transition: 0.2s; 
+}
+
+.btn-opt:hover { 
+    background: #4a90e2; 
+    color: white; 
+}
+
+/* 3. CERTIFICATE & MIJAZ RESULTS (Added at the bottom) */
+.cert-border { 
+    border: 10px double #bdc3c7; /* Elegant double border for Mijaz report */
+    padding: 40px; 
+    border-radius: 4px; 
+    background: #fff; 
+    position: relative; 
+}
+
+.cert-header { 
+    font-size: 12px; 
+    letter-spacing: 2px; 
+    color: #999; 
+    margin-bottom: 20px; 
+}
+
+#user-type-title {
+    color: #d35400; /* Fire/Temperament Orange */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    font-size: 28px;
+}
+
+#type-description {
+    font-style: italic;
+    color: #555;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.career-box { 
+    background: #f9f9f9; 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin: 20px 0; 
+    text-align: left; 
+    border-left: 5px solid #4a90e2;
+}
+
+.btn-download { 
+    background: #27ae60; 
+    color: white; 
+    border: none; 
+    padding: 15px 30px; 
+    border-radius: 8px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    margin-top: 20px; 
+    width: 100%; 
+    font-size: 16px;
+}
+
+.btn-restart { 
+    background: #333; 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+    cursor: pointer; 
+    width: 100%; 
+}
+
+#mijaz-symbol {
+    font-size: 50px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mijaz-badge {
+    padding: 20px 0;
+}
+
+#user-type-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #2c3e50;
+    margin: 0;
+}
