@@ -101,3 +101,12 @@ function downloadPDF() {
 }
 
 showQuestion();
+
+
+function sendFeedback(status) {
+    // In a real app, this would send data to a database. 
+    // For now, we will show a thank you message.
+    console.log("User feedback received: " + status);
+    document.querySelector(".feedback-btns").classList.add("hidden");
+    document.getElementById("feedback-thanks").classList.remove("hidden");
+}

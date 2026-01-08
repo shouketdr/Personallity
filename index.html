@@ -17,7 +17,7 @@
         <div id="quiz-container">
             <header>
                 <h1>PathFinder AI</h1>
-                <p>Discover your Personality/مزاج Mijaz and Career Path</p>
+                <p>Discover your Personality/ Mijaz and Career Path</p>
                 <div class="progress-bar">
                     <div id="progress" style="width: 0%"></div>
                 </div>
@@ -56,6 +56,17 @@
                 </div>
             </div>
 
+
+
+<div class="feedback-section">
+    <p>Is this result accurate?</p>
+    <div class="feedback-btns">
+        <button class="btn-feedback" onclick="sendFeedback('Accurate')">👍 Accurate</button>
+        <button class="btn-feedback" onclick="sendFeedback('Not Accurate')">👎 Not Accurate</button>
+    </div>
+    <p id="feedback-thanks" class="hidden">Thank you for your feedback!</p>
+</div>
+
             <div class="action-buttons">
                 <button class="btn-download" onclick="downloadPDF()">Download Official PDF Report</button>
                 <button class="btn-restart" onclick="location.reload()">Retake Assessment</button>
@@ -66,4 +77,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
