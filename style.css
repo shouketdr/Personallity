@@ -1,0 +1,17 @@
+body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #f4f7f9; display: flex; justify-content: center; padding: 40px 20px; }
+.app-container { max-width: 600px; width: 100%; background: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); padding: 30px; text-align: center; }
+.hidden { display: none; }
+
+/* Quiz Styles */
+.progress-bar { height: 8px; background: #eee; border-radius: 4px; margin: 20px 0; overflow: hidden; }
+#progress { height: 100%; background: #4a90e2; transition: 0.3s; }
+.options-stack { display: flex; flex-direction: column; gap: 15px; margin-top: 30px; }
+.btn-opt { padding: 15px; border: 2px solid #4a90e2; background: white; border-radius: 8px; cursor: pointer; font-size: 16px; font-weight: bold; color: #4a90e2; transition: 0.2s; }
+.btn-opt:hover { background: #4a90e2; color: white; }
+
+/* Certificate Styles */
+.cert-border { border: 10px solid #f0f4f8; padding: 40px; border-radius: 4px; background: #fff; position: relative; }
+.cert-header { font-size: 12px; letter-spacing: 2px; color: #999; margin-bottom: 20px; }
+.career-box { background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: left; }
+.btn-download { background: #27ae60; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 20px; width: 100%; }
+.btn-restart { background: #333; color: white; border: none; padding: 10px; border-radius: 8px; margin-top: 10px; cursor: pointer; width: 100%; }
